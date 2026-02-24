@@ -8,6 +8,10 @@
 <body>
     <form method="POST" action="/">
         {% csrf_token %}
+
+        {% if has_error %}
+            <p style="color: red;">Please enter a valid name.</p>
+        {% endif %}
         
         <label for="your-name">Your Name</label>
         <input id="your-name" name="your-name" type="text">
