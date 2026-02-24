@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 40rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+    background-color: #1f0050;
+    color: white;
+    border: 1px solid #1f0050;
+}
+
+button:hover,
+button:active {
+    background-color: transparent;
+    color: #1f0050;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.forom-control input {
+    font: inherit;
+    display: block;
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #1f0050;
+    background-color: #f4eeff;
+}
+
+.form-control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.errorlist {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    color: #ff0000;
+}
+
+.errors input {
+    border-color: #ff0000;
+    background-color: #ffe5e5;
+}
+
+.errors label {
+    color: #ff0000;
+}
