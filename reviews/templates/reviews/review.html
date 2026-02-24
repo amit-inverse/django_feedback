@@ -7,6 +7,8 @@
 </head>
 <body>
     <form method="POST">
+        {% csrf_token %}
+        
         <label for="your-name">Your Name</label>
         <input id="your-name" name="your-name" type="text">
 
