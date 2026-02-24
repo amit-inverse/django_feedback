@@ -21,3 +21,21 @@ class ReviewForm(forms.ModelForm):
         # fields = "__all__"
         # exclude = ["owner_comment"]
         fields = ["your_name", "review_text", "rating"]
+        labels = {
+            "your_name": "Your Name",
+            "review_text": "Your Feedback",
+            "rating": "Your Rating"
+        }
+        error_messages = {
+            "your_name": {
+                "required": "Your name must not be empty",
+                "min_length": "Your name must be at least 3 characters long",
+                "max_length": "Your name must be less than 100 characters long"
+            },
+            "review_text": {
+                "required": "Your feedback must not be empty"
+            },
+            "rating": {
+                "required": "Please provide a rating between 1 and 5"
+            }
+        }
