@@ -8,6 +8,7 @@
     <p>{{ review.review_text }}</p>
 
     <form method="POST" action="/reviews/favorite">
+        {% csrf_token %}
         <input type="hidden" name="review_id" value="{{ review.id }}" />
         <button>Favourite</button>
     </form>
